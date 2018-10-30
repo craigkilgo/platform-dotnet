@@ -17,6 +17,7 @@ namespace dotnet.Models.ViewModels {
         public List<FiftyValuesView> fifty { get; set; }
         public List<Names> names { get; set; }
         public Sigma s { get; set; }
+        public string path { get; set; }
     }
 
 

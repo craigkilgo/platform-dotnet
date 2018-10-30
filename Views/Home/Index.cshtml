@@ -21,7 +21,9 @@ Given the values, insert a row into a database table
 	<div class="card">
 	<h3>graph</h3>
 	Shortest path from "Carlos <span style="color: #4286f4; font-weight:bold;">(6)</span>" to "Matthew <span style="color: #ff2da0; font-weight:bold;">(77)</span>":
-	<h4>6 => 41 => 93 => 96 => 40 => 52 => 77</h4>
+	<h4>
+		@Model.path
+	</h4>
 	<div id="graph-container">
 	</div>
 	</div>
@@ -211,7 +213,7 @@ Given the values, insert a row into a database table
 
 	var data2 = `@Html.Raw(Json.Serialize(Model.s))`;
 
-	
+
 	// Instantiate sigma:
 	s = new sigma({
 	  graph: JSON.parse(data2),

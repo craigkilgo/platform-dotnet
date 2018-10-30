@@ -70,15 +70,23 @@ namespace dotnet.Controllers
             foreach(Names n in names){
 
                 s.nodes.Add(new Nodes(n.Id.ToString()));
-                string[] friends = n.Friends.Split(",");  
+                string[] friends = n.Friends.Split(",");
+
                 foreach (string f in friends){
                     s.edges.Add(new Edges(i,n.Id.ToString(),f));
                     i++;
-                }  
+                }
             }
             model.s = s;
 
             //bfs for shortest path
+            var graph = new Graph<int>(s.ToVertices(), s.ToTuples());
+            var algorithms = new Algorithms();
+
+            var startVertex = 6;
+            var shortestPath = algorithms.ShortestPathFunction(graph, startVertex);
+
+            model.path = string.Join(" => ", shortestPath(77));
 
 
             //string pairs
@@ -235,6 +243,10 @@ namespace dotnet.Controllers
 
             return twentyRandom;
         }
+
+
+
+
 
     }
 }
