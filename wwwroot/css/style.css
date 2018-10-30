@@ -1,0 +1,19 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    color: #00B7FF;
+  }
+
+
+  #primes>div {
+    display:inline-block;
+    vertical-align:top;
+    padding:10px;
+    padding-left:30px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgba(196, 196, 196, 0.733);
+  }

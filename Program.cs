@@ -8,13 +8,18 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
+
 namespace dotnet
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+           // BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+
+            host.Run();
+
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

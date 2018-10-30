@@ -2,7 +2,7 @@
     ViewData["Title"] = "Research Project CISS - Dotnet";
 }
 
-
+@model dotnet.Models.ViewModels.IndexViewModel
 <!--
 Retrieve data from a database and construct a hash table utilizing SHA-256 as the hashing algorithm
 Retrieve data from a database and perform a merge sort on one of the values in the table
@@ -12,9 +12,7 @@ Generate 20 random numbers and insert them into an array.  Find the maximum and 
 Generate a list of all primes under 500 using the Sieve of Eratosthenes.
 Given 10 pairs of strings and one hash value, return a boolean value based on the presence of a hash value from the concatenation of those pairs from the list.
 Given the values, insert a row into a database table
-
-
-	-->
+-->
 
 <div class="container">
 <h1>Research Project CISS - Dotnet</h1>
@@ -39,7 +37,19 @@ Given the values, insert a row into a database table
 						</tr>
 					</thead>
 					<tbody>
-						<tr><td>e5885cf34cea4840679b8dbca558240b6b5882b22f92e29830a566708376eae4</td><td>YCH95UGL4GY</td></tr><tr><td>c26f13a0153cb67de4e21fce6a5648834488cd1bf63c77c13261f0d9a1b5e6cc</td><td>FHV42ARL9TP</td></tr><tr><td>7962fc96a0710b6980297d81853fe398ee7c4007acd2f196aea05e1830cf5f3b</td><td>BMM47BMF3LO</td></tr><tr><td>f74d4c47e25df6f893474aee0d100e8bffb8373c906bd7444c01bc7d4671484c</td><td>YJH46ISK9VO</td></tr><tr><td>edc4045153b0cc06639b0f46d2f2e7f2d08f514f0cf53c3a461a3d144914d5c6</td><td>TAZ54IZO8LO</td></tr><tr><td>baccf308569713d6399235fe78ee496dfb9a519708858d4d4761424d099e1e86</td><td>KCD25YCN1XX</td></tr><tr><td>c2d1120001d8a666be262421f84046014f450b6834ee8792af8807b7cfcb8654</td><td>VWQ33MGV0CM</td></tr><tr><td>18089ab3fff3ad36e37f277cec8f8c128b29501fbf7b70e9562d6a4b932ce558</td><td>GDK07BOI5QR</td></tr><tr><td>1d3dd3a376f033ab8fe1350b5e3c31617d743d6f8368901369ad4af87d25cef5</td><td>INS25LDF9PH</td></tr><tr><td>f8ff75f6ebf49aff86cc1ca63dc156aacb87bdfb17d9d1bd8619da184e8e5966</td><td>MSJ55FUH3AB</td></tr><tr><td>248305a1d5e8bba2cce7706b48acba67701af3ade84d334d133f1c08204f14ef</td><td>OIM73EBP7JJ</td></tr><tr><td>669b8e6af307cd14e7dd0bcba13764da0bfb14eb0c12e10c3b2b40467c12c414</td><td>QCO17LHE5DI</td></tr><tr><td>6c00f65a2d586df1eb4656f4fef2d74e659e92f09598b7ed3c528cbcdf845f60</td><td>ESN69FBR0NK</td></tr><tr><td>b8afd4bebb947ae5773d05743c9b2a9e2e5be2b024cd5ab517417eb7f4ec26e0</td><td>VVI65KWQ2XY</td></tr><tr><td>73a71d58939d875d57b3ba610e9f7f760704a393197f1ceb627c2f5bfa73cac6</td><td>QMC05VDY3HG</td></tr><tr><td>ed863cd4a4e01ad5b0ac7dbfd65f36d5541f11899d6c365e16bb763f03df6079</td><td>GMH16EXZ3VQ</td></tr><tr><td>c559caf651aeb12fc7bf369770b92e1151d41a098e1d9ad07e2c2fb745c5e998</td><td>JIE12PCM7VO</td></tr><tr><td>5cc52a5ce49f905d0b9ca8e69d6e0a50bdadc1565735bd13a8f3a4a247643151</td><td>JNX59PZM9FT</td></tr><tr><td>d71be0d17b8700252fcd97a925900b5b5c1a095eda77793683eda9a01bee76f2</td><td>OTK78CVW9RR</td></tr><tr><td>4b80ef4440d9deb0a1fe71bbae31a4c54bed249e2765d0a38b9e042750897824</td><td>CNM14QRG3AE</td></tr><tr><td>561c5bf50718f3690adb1b574c0c0119fab6e880e94f912f973f87eb4467d586</td><td>BRE92VYD2TV</td></tr><tr><td>c8644626b862f08dbee4ab599069718f0346ab49fd9a6a1c2887374d11bcb59d</td><td>KWO29UKW7CQ</td></tr><tr><td>827a472b356236de9733a2c7b9b45a85088a4b67646dcb88e8ecd4554d6b9fb9</td><td>AVX41OFS0SY</td></tr><tr><td>08cc5e3d25ce8543bbd6b1b4a341a15cf14792e729df574d8ec5d25e7028c8dc</td><td>BGV40HEA7ZY</td></tr><tr><td>6d8077ba6ee92f98e1dd7852426030bc9729f40393dad00c0eaeeed6c8582864</td><td>QKI35DOZ7SW</td></tr><tr><td>0a77345d142d5d0f7b38f8cf7a633cdff544a14061b278dc734a263cfac363f0</td><td>JGI09WAT8MO</td></tr><tr><td>f3d6241b69317175151af39393b3d8741afcbc8c40d9047ee5dfce848f011b1e</td><td>XQE09NPP8FR</td></tr><tr><td>ab19621f3dca0b8c74c7f28a3bb5b4d4f4fb773c3ed7f96c4ed52e6bb2635d64</td><td>IGJ96ZJG3LL</td></tr><tr><td>388d6759222d72be0e511294c4f93d8948172b774cfb9cdaf66ad272c2ac1e84</td><td>LHM89MPV1GD</td></tr><tr><td>f371168c2f97bc9784d952a0ae907edd2b392e4d103d31c7bf37d3906395dd77</td><td>OXJ93NEE7GG</td></tr><tr><td>0184a6a7ff361aa7d4210c9a0294e8bf0199ef977d9d086f41ac6aa8288ee514</td><td>WPP98FTC6FA</td></tr><tr><td>3469141c1e3206bf8afcbd92ead8adfea855b053f903df39d94394aece55c8c8</td><td>JIU41TYN0HW</td></tr><tr><td>5bd2a03458117dba87bdccce9a1eed65c4acd5c0b7e8eaf9f97c35a1a2158b13</td><td>TDK40XWZ0UQ</td></tr><tr><td>e04d4786ea3a3b541ad0bcf3c891c71d0efccd5e1d49b0f7249b9835a888411f</td><td>RQF92EYJ0DC</td></tr><tr><td>c8734781af7b28ee59484974daca549d5bd23c5459e5686077f29de4579d997c</td><td>VOD03QOV7UK</td></tr><tr><td>41459bb7bea0b4235b38560574267d883101d892764ab4eada2480aedddf247b</td><td>DWK44YTD1TQ</td></tr><tr><td>58d1c688aa506fc8d8a7a8df62ccaf61f9ba3c7c7f1ff96340fc69ac9dd025f7</td><td>XZR48YUV0EH</td></tr><tr><td>e20239547ad612911706c4bcdeece19a5e317a78dcdd1532959fe40b677672f8</td><td>EHF71FRW3ET</td></tr><tr><td>eaea8314159c3ad79b9387362aea97893f6175b58d41da6b5b28a04b8be3b6d2</td><td>ATX74KMT3YT</td></tr><tr><td>8b05605b85a4028fdfb012e8e5acce30c341630789b61ac0881a776bdf946f2f</td><td>COX13FZN7PX</td></tr><tr><td>763628d4aefca727fdfc9cc5b7b556ace8371c3e8b3bf35509e14eccb33c4e4f</td><td>ANP84KUF0PQ</td></tr><tr><td>cc4d2dbfda72247e081a9f6191e082bf4e23fc3fc9cd60b8466658e20f863e32</td><td>DOP29TSQ0QR</td></tr><tr><td>fd9efa429927c2dd18225cbc9db4ebcb6bcaff273a61148f5ccf2d64e1430fbc</td><td>DVU05KHF8OD</td></tr><tr><td>46d687e7a825f99b8b3cf6d55baa70c3b4df57b338486f40d3356b50a2cb2e59</td><td>FYG85XRD7GD</td></tr><tr><td>3da35029f2c56556818b40ec6640ab1d954fecb2206b8e5941f8bca4bb249fb4</td><td>HQO06ORV5JN</td></tr><tr><td>ac7d0e9bbe4cdb1632e5bba68b2fff583a275cbe441936d557fbf6c4e91667d2</td><td>MHU54GSA5EP</td></tr><tr><td>f5a842116539381947a9f977c16b08a20c2287ab987cf12f49a6eaa029f948d0</td><td>LFO77CKC4WO</td></tr><tr><td>34181b0c65c0b2bf3f1ef21f50aa27273827f55f89c8a464485b377462df7c7a</td><td>QCT57DFI5BE</td></tr><tr><td>75a596dded1c45da4caf40d2395d2cfe0b6b1fa6ad8892d754797a8fa5dd3929</td><td>WFY40VIR0HQ</td></tr><tr><td>55b8ff7b6c001314938ca44c5ffa640925c84f1f3be0294637ce0eb86a4ba2a0</td><td>WOF71NCG8OV</td></tr>					</tbody>
+
+						@foreach (FiftyValuesView v in Model.fifty){
+							<tr>
+								<td>
+									@v.Hash
+								</td>
+								<td>
+									@v.Value
+								</td>
+							</tr>
+
+						}
+									</tbody>
 				</table>
 			</div>
 </div>
@@ -59,7 +69,24 @@ Given the values, insert a row into a database table
 				</tr>
 			</thead>
 			<tbody>
-			<tr><td>1</td><td>44</td><td>Acton</td></tr><tr><td>2</td><td>14</td><td>Ahmed</td></tr><tr><td>3</td><td>66</td><td>Alexandra</td></tr><tr><td>4</td><td>46</td><td>Amery</td></tr><tr><td>5</td><td>90</td><td>Azalia</td></tr><tr><td>6</td><td>95</td><td>Barbara</td></tr><tr><td>7</td><td>55</td><td>Baxter</td></tr><tr><td>8</td><td>33</td><td>Beck</td></tr><tr><td>9</td><td>43</td><td>Benedict</td></tr><tr><td>10</td><td>4</td><td>Berk</td></tr><tr><td>11</td><td>10</td><td>Blake</td></tr><tr><td>12</td><td>20</td><td>Bo</td></tr><tr><td>13</td><td>22</td><td>Breanna</td></tr><tr><td>14</td><td>38</td><td>Buffy</td></tr><tr><td>15</td><td>68</td><td>Cameran</td></tr><tr><td>16</td><td>30</td><td>Cameran</td></tr><tr><td>17</td><td>16</td><td>Cameron</td></tr><tr><td>18</td><td>6</td><td>Carlos</td></tr><tr><td>19</td><td>97</td><td>Catherine</td></tr><tr><td>20</td><td>96</td><td>Coby</td></tr><tr><td>21</td><td>85</td><td>Darius</td></tr><tr><td>22</td><td>52</td><td>Daryl</td></tr><tr><td>23</td><td>60</td><td>Deirdre</td></tr><tr><td>24</td><td>89</td><td>Dexter</td></tr><tr><td>25</td><td>71</td><td>Duncan</td></tr><tr><td>26</td><td>29</td><td>Eaton</td></tr><tr><td>27</td><td>72</td><td>Emmanuel</td></tr><tr><td>28</td><td>94</td><td>Erin</td></tr><tr><td>29</td><td>26</td><td>Ezekiel</td></tr><tr><td>30</td><td>78</td><td>Farrah</td></tr><tr><td>31</td><td>82</td><td>Fleur</td></tr><tr><td>32</td><td>1</td><td>Fleur</td></tr><tr><td>33</td><td>61</td><td>Flynn</td></tr><tr><td>34</td><td>47</td><td>Forrest</td></tr><tr><td>35</td><td>75</td><td>Frances</td></tr><tr><td>36</td><td>98</td><td>Fulton</td></tr><tr><td>37</td><td>35</td><td>George</td></tr><tr><td>38</td><td>73</td><td>Giacomo</td></tr><tr><td>39</td><td>23</td><td>Hadley</td></tr><tr><td>40</td><td>53</td><td>Hayes</td></tr><tr><td>41</td><td>51</td><td>Hollee</td></tr><tr><td>42</td><td>41</td><td>Hop</td></tr><tr><td>43</td><td>31</td><td>Hoyt</td></tr><tr><td>44</td><td>19</td><td>Ima</td></tr><tr><td>45</td><td>8</td><td>Ima</td></tr><tr><td>46</td><td>36</td><td>Inez</td></tr><tr><td>47</td><td>5</td><td>Inga</td></tr><tr><td>48</td><td>100</td><td>Iona</td></tr><tr><td>49</td><td>18</td><td>Irma</td></tr><tr><td>50</td><td>45</td><td>Jaden</td></tr><tr><td>51</td><td>27</td><td>Jana</td></tr><tr><td>52</td><td>34</td><td>John</td></tr><tr><td>53</td><td>81</td><td>Josiah</td></tr><tr><td>54</td><td>7</td><td>Judith</td></tr><tr><td>55</td><td>83</td><td>Julian</td></tr><tr><td>56</td><td>37</td><td>Kalia</td></tr><tr><td>57</td><td>69</td><td>Kamal</td></tr><tr><td>58</td><td>65</td><td>Katelyn</td></tr><tr><td>59</td><td>79</td><td>Kenyon</td></tr><tr><td>60</td><td>49</td><td>Lamar</td></tr><tr><td>61</td><td>74</td><td>Lee</td></tr><tr><td>62</td><td>28</td><td>Leila</td></tr><tr><td>63</td><td>91</td><td>Leslie</td></tr><tr><td>64</td><td>93</td><td>Lionel</td></tr><tr><td>65</td><td>58</td><td>Louis</td></tr><tr><td>66</td><td>17</td><td>Louis</td></tr><tr><td>67</td><td>15</td><td>Macy</td></tr><tr><td>68</td><td>80</td><td>Madaline</td></tr><tr><td>69</td><td>11</td><td>Magee</td></tr><tr><td>70</td><td>76</td><td>Malcolm</td></tr><tr><td>71</td><td>24</td><td>Mannix</td></tr><tr><td>72</td><td>77</td><td>Matthew</td></tr><tr><td>73</td><td>63</td><td>Michelle</td></tr><tr><td>74</td><td>87</td><td>Moana</td></tr><tr><td>75</td><td>13</td><td>Mohammad</td></tr><tr><td>76</td><td>92</td><td>Nomlanga</td></tr><tr><td>77</td><td>62</td><td>Ora</td></tr><tr><td>78</td><td>84</td><td>Perry</td></tr><tr><td>79</td><td>88</td><td>Petra</td></tr><tr><td>80</td><td>67</td><td>Priscilla</td></tr><tr><td>81</td><td>9</td><td>Regina</td></tr><tr><td>82</td><td>12</td><td>Rina</td></tr><tr><td>83</td><td>70</td><td>Risa</td></tr><tr><td>84</td><td>59</td><td>Ross</td></tr><tr><td>85</td><td>54</td><td>Sade</td></tr><tr><td>86</td><td>64</td><td>Scott</td></tr><tr><td>87</td><td>39</td><td>Sebastian</td></tr><tr><td>88</td><td>3</td><td>September</td></tr><tr><td>89</td><td>57</td><td>Summer</td></tr><tr><td>90</td><td>50</td><td>Sybil</td></tr><tr><td>91</td><td>21</td><td>Tamara</td></tr><tr><td>92</td><td>56</td><td>Tanisha</td></tr><tr><td>93</td><td>86</td><td>Tashya</td></tr><tr><td>94</td><td>2</td><td>Tate</td></tr><tr><td>95</td><td>40</td><td>Ulric</td></tr><tr><td>96</td><td>48</td><td>Uriah</td></tr><tr><td>97</td><td>25</td><td>Xavier</td></tr><tr><td>98</td><td>99</td><td>Yael</td></tr><tr><td>99</td><td>42</td><td>Yardley</td></tr><tr><td>100</td><td>32</td><td>Zane</td></tr>			</tbody>
+				@{
+					int count = 1;
+				}
+
+				@foreach (Names n in Model.names){
+					<tr>
+						<td>
+							@(count++)
+						</td>
+						<td>
+							@n.Id
+						</td>
+						<td>
+							@n.Name
+						</td>
+					</tr>
+				}
+			</tbody>
 		</table>
 	</div>
 </div>
@@ -68,8 +95,12 @@ Given the values, insert a row into a database table
 <div class="row">
 	<div class="card">
 	<h3>20 random value</h3>
-	<h4>max: 16937783</h4>
-	<h4>min: 1958138636</h4>
+	<h4>
+		max: @Model.Max
+	</h4>
+	<h4>
+		min: @Model.Min
+	</h4>
 
 
 		<table>
@@ -79,7 +110,14 @@ Given the values, insert a row into a database table
 				</tr>
 			</thead>
 			<tbody>
-				<tr><td>345229614</td></tr><tr><td>1706479678</td></tr><tr><td>1005430756</td></tr><tr><td>491012998</td></tr><tr><td>1309649791</td></tr><tr><td>1946311188</td></tr><tr><td>16937783</td></tr><tr><td>1477951910</td></tr><tr><td>1533408405</td></tr><tr><td>1729940464</td></tr><tr><td>1446149430</td></tr><tr><td>1560443674</td></tr><tr><td>1282709164</td></tr><tr><td>299877447</td></tr><tr><td>1958138636</td></tr><tr><td>394140256</td></tr><tr><td>551426741</td></tr><tr><td>1796131867</td></tr><tr><td>771270888</td></tr><tr><td>248532700</td></tr>			</tbody>
+@foreach (int r in Model.values){
+	<tr>
+		<td>
+			@r
+		</td>
+	</tr>
+}
+			</tbody>
 		</table>
 	</div>
 </div>
@@ -87,12 +125,13 @@ Given the values, insert a row into a database table
 <div class="row">
 	<div class="card">
 	<h3>primes under 500</h3>
-
-		<table>
-			<tbody>
-
-				<tr><td>2</td><td>3</td><td>5</td><td>7</td><td>11</td><td>13</td><td>17</td><td>19</td><td>23</td><td>29</td></tr><tr><td>31</td><td>37</td><td>41</td><td>43</td><td>47</td><td>53</td><td>59</td><td>61</td><td>67</td><td>71</td></tr><tr><td>73</td><td>79</td><td>83</td><td>89</td><td>97</td><td>101</td><td>103</td><td>107</td><td>109</td><td>113</td></tr><tr><td>127</td><td>131</td><td>137</td><td>139</td><td>149</td><td>151</td><td>157</td><td>163</td><td>167</td><td>173</td></tr><tr><td>179</td><td>181</td><td>191</td><td>193</td><td>197</td><td>199</td><td>211</td><td>223</td><td>227</td><td>229</td></tr><tr><td>233</td><td>239</td><td>241</td><td>251</td><td>257</td><td>263</td><td>269</td><td>271</td><td>277</td><td>281</td></tr><tr><td>283</td><td>293</td><td>307</td><td>311</td><td>313</td><td>317</td><td>331</td><td>337</td><td>347</td><td>349</td></tr><tr><td>353</td><td>359</td><td>367</td><td>373</td><td>379</td><td>383</td><td>389</td><td>397</td><td>401</td><td>409</td></tr><tr><td>419</td><td>421</td><td>431</td><td>433</td><td>439</td><td>443</td><td>449</td><td>457</td><td>461</td><td>463</td></tr><tr><td>467</td><td>479</td><td>487</td><td>491</td><td>499</td></tr>			</tbody>
-		</table>
+		<div id="primes">
+				@foreach (int p in ViewBag.primes){
+					<div>
+						@p
+					</div>
+				}
+		</div>
 	</div>
 </div>
 
@@ -100,7 +139,8 @@ Given the values, insert a row into a database table
 	<div class="card">
 		<h3>string pairs and check for hash</h3>
 		<h5>hash: acb80281e4e94213c7452a81fa08f61893eff5ffa62d50876da8d1fed4710d95</h5>
-		<h5>result: true</h5>
+		<h5>result: @Model.hashPresent
+		</h5>
 				<table>
 					<thead>
 						<tr>
@@ -158,9 +198,9 @@ Given the values, insert a row into a database table
 	<div class="card">
 	<h3>database insert</h3>
 	The following value was inserted into the <span style="font-weight:bold;">"transactions"</span> table:<br>
-	<span style="font-weight:bold;">customer: </span> Bob Jones<br>
-	<span style="font-weight:bold;">item: </span> putter<br>
-	<span style="font-weight:bold;">price: </span> $5.00<br>
+	<span style="font-weight:bold;">customer: </span> Ben Hogan<br>
+	<span style="font-weight:bold;">item: </span> Cleek<br>
+	<span style="font-weight:bold;">price: </span> $9.00<br>
 	</div>
 </div>
 
@@ -169,10 +209,12 @@ Given the values, insert a row into a database table
 
 <script>
 
+	var data2 = `@Html.Raw(Json.Serialize(Model.s))`;
 
-	var data = {"nodes":[{"id":"1","x":99,"y":88,"size":1},{"id":"2","x":12,"y":14,"size":1},{"id":"3","x":12,"y":91,"size":1},{"id":"4","x":84,"y":60,"size":1},{"id":"5","x":41,"y":64,"size":1},{"id":"6","x":56,"y":46,"size":1},{"id":"7","x":80,"y":11,"size":1},{"id":"8","x":50,"y":35,"size":1},{"id":"9","x":100,"y":4,"size":1},{"id":"10","x":18,"y":59,"size":1},{"id":"11","x":30,"y":46,"size":1},{"id":"12","x":95,"y":87,"size":1},{"id":"13","x":67,"y":40,"size":1},{"id":"14","x":71,"y":69,"size":1},{"id":"15","x":48,"y":79,"size":1},{"id":"16","x":15,"y":36,"size":1},{"id":"17","x":77,"y":1,"size":1},{"id":"18","x":20,"y":9,"size":1},{"id":"19","x":82,"y":88,"size":1},{"id":"20","x":69,"y":96,"size":1},{"id":"21","x":29,"y":13,"size":1},{"id":"22","x":82,"y":18,"size":1},{"id":"23","x":98,"y":73,"size":1},{"id":"24","x":54,"y":57,"size":1},{"id":"25","x":49,"y":36,"size":1},{"id":"26","x":20,"y":61,"size":1},{"id":"27","x":15,"y":97,"size":1},{"id":"28","x":100,"y":80,"size":1},{"id":"29","x":43,"y":4,"size":1},{"id":"30","x":48,"y":6,"size":1},{"id":"31","x":76,"y":23,"size":1},{"id":"32","x":57,"y":52,"size":1},{"id":"33","x":9,"y":4,"size":1},{"id":"34","x":54,"y":26,"size":1},{"id":"35","x":45,"y":77,"size":1},{"id":"36","x":53,"y":77,"size":1},{"id":"37","x":6,"y":62,"size":1},{"id":"38","x":73,"y":33,"size":1},{"id":"39","x":85,"y":69,"size":1},{"id":"40","x":46,"y":73,"size":1},{"id":"41","x":98,"y":64,"size":1},{"id":"42","x":9,"y":12,"size":1},{"id":"43","x":48,"y":54,"size":1},{"id":"44","x":65,"y":30,"size":1},{"id":"45","x":12,"y":59,"size":1},{"id":"46","x":82,"y":78,"size":1},{"id":"47","x":90,"y":48,"size":1},{"id":"48","x":65,"y":76,"size":1},{"id":"49","x":28,"y":2,"size":1},{"id":"50","x":79,"y":8,"size":1},{"id":"51","x":21,"y":12,"size":1},{"id":"52","x":37,"y":49,"size":1},{"id":"53","x":84,"y":72,"size":1},{"id":"54","x":34,"y":69,"size":1},{"id":"55","x":10,"y":39,"size":1},{"id":"56","x":10,"y":50,"size":1},{"id":"57","x":65,"y":55,"size":1},{"id":"58","x":85,"y":94,"size":1},{"id":"59","x":7,"y":29,"size":1},{"id":"60","x":62,"y":92,"size":1},{"id":"61","x":97,"y":78,"size":1},{"id":"62","x":82,"y":71,"size":1},{"id":"63","x":53,"y":75,"size":1},{"id":"64","x":95,"y":26,"size":1},{"id":"65","x":57,"y":33,"size":1},{"id":"66","x":3,"y":48,"size":1},{"id":"67","x":22,"y":22,"size":1},{"id":"68","x":5,"y":15,"size":1},{"id":"69","x":51,"y":82,"size":1},{"id":"70","x":46,"y":98,"size":1},{"id":"71","x":13,"y":21,"size":1},{"id":"72","x":7,"y":4,"size":1},{"id":"73","x":65,"y":21,"size":1},{"id":"74","x":7,"y":98,"size":1},{"id":"75","x":51,"y":43,"size":1},{"id":"76","x":8,"y":44,"size":1},{"id":"77","x":4,"y":27,"size":1},{"id":"78","x":72,"y":85,"size":1},{"id":"79","x":13,"y":8,"size":1},{"id":"80","x":40,"y":27,"size":1},{"id":"81","x":45,"y":27,"size":1},{"id":"82","x":74,"y":79,"size":1},{"id":"83","x":96,"y":58,"size":1},{"id":"84","x":63,"y":91,"size":1},{"id":"85","x":94,"y":70,"size":1},{"id":"86","x":81,"y":9,"size":1},{"id":"87","x":67,"y":48,"size":1},{"id":"88","x":99,"y":70,"size":1},{"id":"89","x":61,"y":97,"size":1},{"id":"90","x":62,"y":71,"size":1},{"id":"91","x":45,"y":86,"size":1},{"id":"92","x":57,"y":57,"size":1},{"id":"93","x":46,"y":20,"size":1},{"id":"94","x":59,"y":5,"size":1},{"id":"95","x":74,"y":11,"size":1},{"id":"96","x":37,"y":1,"size":1},{"id":"97","x":49,"y":69,"size":1},{"id":"98","x":15,"y":46,"size":1},{"id":"99","x":45,"y":84,"size":1},{"id":"100","x":96,"y":92,"size":1}],"edges":[{"id":0,"source":"1","target":"84"},{"id":1,"source":"1","target":"10"},{"id":2,"source":"1","target":"40"},{"id":3,"source":"2","target":"54"},{"id":4,"source":"2","target":"77"},{"id":5,"source":"2","target":"57"},{"id":6,"source":"3","target":"32"},{"id":7,"source":"3","target":"57"},{"id":8,"source":"3","target":"44"},{"id":9,"source":"4","target":"53"},{"id":10,"source":"4","target":"57"},{"id":11,"source":"4","target":"56"},{"id":12,"source":"5","target":"22"},{"id":13,"source":"5","target":"83"},{"id":14,"source":"5","target":"79"},{"id":15,"source":"6","target":"41"},{"id":16,"source":"6","target":"49"},{"id":17,"source":"6","target":"59"},{"id":18,"source":"7","target":"72"},{"id":19,"source":"7","target":"62"},{"id":20,"source":"7","target":"41"},{"id":21,"source":"8","target":"99"},{"id":22,"source":"8","target":"94"},{"id":23,"source":"8","target":"92"},{"id":24,"source":"9","target":"67"},{"id":25,"source":"9","target":"13"},{"id":26,"source":"9","target":"39"},{"id":27,"source":"10","target":"43"},{"id":28,"source":"10","target":"11"},{"id":29,"source":"10","target":"33"},{"id":30,"source":"11","target":"38"},{"id":31,"source":"11","target":"68"},{"id":32,"source":"11","target":"10"},{"id":33,"source":"12","target":"10"},{"id":34,"source":"12","target":"65"},{"id":35,"source":"12","target":"22"},{"id":36,"source":"13","target":"65"},{"id":37,"source":"13","target":"24"},{"id":38,"source":"13","target":"46"},{"id":39,"source":"14","target":"67"},{"id":40,"source":"14","target":"97"},{"id":41,"source":"14","target":"50"},{"id":42,"source":"15","target":"44"},{"id":43,"source":"15","target":"79"},{"id":44,"source":"15","target":"83"},{"id":45,"source":"16","target":"10"},{"id":46,"source":"16","target":"64"},{"id":47,"source":"16","target":"44"},{"id":48,"source":"17","target":"35"},{"id":49,"source":"17","target":"31"},{"id":50,"source":"17","target":"32"},{"id":51,"source":"18","target":"17"},{"id":52,"source":"18","target":"56"},{"id":53,"source":"18","target":"8"},{"id":54,"source":"19","target":"57"},{"id":55,"source":"19","target":"12"},{"id":56,"source":"19","target":"91"},{"id":57,"source":"20","target":"99"},{"id":58,"source":"20","target":"70"},{"id":59,"source":"20","target":"89"},{"id":60,"source":"21","target":"58"},{"id":61,"source":"21","target":"85"},{"id":62,"source":"21","target":"26"},{"id":63,"source":"22","target":"40"},{"id":64,"source":"22","target":"96"},{"id":65,"source":"22","target":"6"},{"id":66,"source":"23","target":"88"},{"id":67,"source":"23","target":"36"},{"id":68,"source":"23","target":"51"},{"id":69,"source":"24","target":"97"},{"id":70,"source":"24","target":"54"},{"id":71,"source":"24","target":"26"},{"id":72,"source":"25","target":"7"},{"id":73,"source":"25","target":"1"},{"id":74,"source":"25","target":"75"},{"id":75,"source":"26","target":"13"},{"id":76,"source":"26","target":"14"},{"id":77,"source":"26","target":"75"},{"id":78,"source":"27","target":"5"},{"id":79,"source":"27","target":"41"},{"id":80,"source":"27","target":"16"},{"id":81,"source":"28","target":"97"},{"id":82,"source":"28","target":"18"},{"id":83,"source":"28","target":"59"},{"id":84,"source":"29","target":"10"},{"id":85,"source":"29","target":"35"},{"id":86,"source":"29","target":"86"},{"id":87,"source":"30","target":"58"},{"id":88,"source":"30","target":"68"},{"id":89,"source":"30","target":"24"},{"id":90,"source":"31","target":"33"},{"id":91,"source":"31","target":"11"},{"id":92,"source":"31","target":"59"},{"id":93,"source":"32","target":"68"},{"id":94,"source":"32","target":"13"},{"id":95,"source":"32","target":"21"},{"id":96,"source":"33","target":"32"},{"id":97,"source":"33","target":"31"},{"id":98,"source":"33","target":"97"},{"id":99,"source":"34","target":"93"},{"id":100,"source":"34","target":"96"},{"id":101,"source":"34","target":"63"},{"id":102,"source":"35","target":"77"},{"id":103,"source":"35","target":"75"},{"id":104,"source":"35","target":"36"},{"id":105,"source":"36","target":"29"},{"id":106,"source":"36","target":"39"},{"id":107,"source":"36","target":"97"},{"id":108,"source":"37","target":"17"},{"id":109,"source":"37","target":"9"},{"id":110,"source":"37","target":"78"},{"id":111,"source":"38","target":"16"},{"id":112,"source":"38","target":"22"},{"id":113,"source":"38","target":"96"},{"id":114,"source":"39","target":"60"},{"id":115,"source":"39","target":"95"},{"id":116,"source":"39","target":"78"},{"id":117,"source":"40","target":"52"},{"id":118,"source":"40","target":"55"},{"id":119,"source":"40","target":"61"},{"id":120,"source":"41","target":"93"},{"id":121,"source":"41","target":"67"},{"id":122,"source":"41","target":"91"},{"id":123,"source":"42","target":"83"},{"id":124,"source":"42","target":"4"},{"id":125,"source":"42","target":"86"},{"id":126,"source":"43","target":"68"},{"id":127,"source":"43","target":"69"},{"id":128,"source":"43","target":"59"},{"id":129,"source":"44","target":"1"},{"id":130,"source":"44","target":"2"},{"id":131,"source":"44","target":"95"},{"id":132,"source":"45","target":"82"},{"id":133,"source":"45","target":"95"},{"id":134,"source":"45","target":"20"},{"id":135,"source":"46","target":"81"},{"id":136,"source":"46","target":"38"},{"id":137,"source":"46","target":"4"},{"id":138,"source":"47","target":"57"},{"id":139,"source":"47","target":"98"},{"id":140,"source":"47","target":"40"},{"id":141,"source":"48","target":"54"},{"id":142,"source":"48","target":"64"},{"id":143,"source":"48","target":"65"},{"id":144,"source":"49","target":"91"},{"id":145,"source":"49","target":"100"},{"id":146,"source":"49","target":"21"},{"id":147,"source":"50","target":"37"},{"id":148,"source":"50","target":"14"},{"id":149,"source":"50","target":"78"},{"id":150,"source":"51","target":"72"},{"id":151,"source":"51","target":"41"},{"id":152,"source":"51","target":"13"},{"id":153,"source":"52","target":"70"},{"id":154,"source":"52","target":"77"},{"id":155,"source":"52","target":"65"},{"id":156,"source":"53","target":"21"},{"id":157,"source":"53","target":"1"},{"id":158,"source":"53","target":"20"},{"id":159,"source":"54","target":"22"},{"id":160,"source":"54","target":"59"},{"id":161,"source":"54","target":"14"},{"id":162,"source":"55","target":"1"},{"id":163,"source":"55","target":"66"},{"id":164,"source":"55","target":"11"},{"id":165,"source":"56","target":"7"},{"id":166,"source":"56","target":"23"},{"id":167,"source":"56","target":"51"},{"id":168,"source":"57","target":"48"},{"id":169,"source":"57","target":"47"},{"id":170,"source":"57","target":"28"},{"id":171,"source":"58","target":"79"},{"id":172,"source":"58","target":"84"},{"id":173,"source":"58","target":"92"},{"id":174,"source":"59","target":"33"},{"id":175,"source":"59","target":"61"},{"id":176,"source":"59","target":"74"},{"id":177,"source":"60","target":"14"},{"id":178,"source":"60","target":"42"},{"id":179,"source":"60","target":"43"},{"id":180,"source":"61","target":"93"},{"id":181,"source":"61","target":"98"},{"id":182,"source":"61","target":"63"},{"id":183,"source":"62","target":"57"},{"id":184,"source":"62","target":"58"},{"id":185,"source":"62","target":"89"},{"id":186,"source":"63","target":"16"},{"id":187,"source":"63","target":"78"},{"id":188,"source":"63","target":"95"},{"id":189,"source":"64","target":"43"},{"id":190,"source":"64","target":"44"},{"id":191,"source":"64","target":"75"},{"id":192,"source":"65","target":"25"},{"id":193,"source":"65","target":"57"},{"id":194,"source":"65","target":"49"},{"id":195,"source":"66","target":"21"},{"id":196,"source":"66","target":"62"},{"id":197,"source":"66","target":"71"},{"id":198,"source":"67","target":"65"},{"id":199,"source":"67","target":"45"},{"id":200,"source":"67","target":"10"},{"id":201,"source":"68","target":"81"},{"id":202,"source":"68","target":"92"},{"id":203,"source":"68","target":"9"},{"id":204,"source":"69","target":"31"},{"id":205,"source":"69","target":"5"},{"id":206,"source":"69","target":"79"},{"id":207,"source":"70","target":"14"},{"id":208,"source":"70","target":"60"},{"id":209,"source":"70","target":"50"},{"id":210,"source":"71","target":"62"},{"id":211,"source":"71","target":"99"},{"id":212,"source":"71","target":"83"},{"id":213,"source":"72","target":"86"},{"id":214,"source":"72","target":"19"},{"id":215,"source":"72","target":"81"},{"id":216,"source":"73","target":"59"},{"id":217,"source":"73","target":"14"},{"id":218,"source":"73","target":"96"},{"id":219,"source":"74","target":"97"},{"id":220,"source":"74","target":"13"},{"id":221,"source":"74","target":"78"},{"id":222,"source":"75","target":"38"},{"id":223,"source":"75","target":"59"},{"id":224,"source":"75","target":"94"},{"id":225,"source":"76","target":"77"},{"id":226,"source":"76","target":"8"},{"id":227,"source":"76","target":"80"},{"id":228,"source":"77","target":"11"},{"id":229,"source":"77","target":"67"},{"id":230,"source":"77","target":"69"},{"id":231,"source":"78","target":"95"},{"id":232,"source":"78","target":"81"},{"id":233,"source":"78","target":"90"},{"id":234,"source":"79","target":"95"},{"id":235,"source":"79","target":"54"},{"id":236,"source":"79","target":"9"},{"id":237,"source":"80","target":"26"},{"id":238,"source":"80","target":"42"},{"id":239,"source":"80","target":"48"},{"id":240,"source":"81","target":"73"},{"id":241,"source":"81","target":"13"},{"id":242,"source":"81","target":"56"},{"id":243,"source":"82","target":"18"},{"id":244,"source":"82","target":"55"},{"id":245,"source":"82","target":"90"},{"id":246,"source":"83","target":"90"},{"id":247,"source":"83","target":"29"},{"id":248,"source":"83","target":"70"},{"id":249,"source":"84","target":"80"},{"id":250,"source":"84","target":"81"},{"id":251,"source":"84","target":"69"},{"id":252,"source":"85","target":"72"},{"id":253,"source":"85","target":"73"},{"id":254,"source":"85","target":"61"},{"id":255,"source":"86","target":"60"},{"id":256,"source":"86","target":"57"},{"id":257,"source":"86","target":"80"},{"id":258,"source":"87","target":"35"},{"id":259,"source":"87","target":"94"},{"id":260,"source":"87","target":"53"},{"id":261,"source":"88","target":"96"},{"id":262,"source":"88","target":"36"},{"id":263,"source":"88","target":"21"},{"id":264,"source":"89","target":"79"},{"id":265,"source":"89","target":"2"},{"id":266,"source":"89","target":"12"},{"id":267,"source":"90","target":"78"},{"id":268,"source":"90","target":"13"},{"id":269,"source":"90","target":"24"},{"id":270,"source":"91","target":"9"},{"id":271,"source":"91","target":"53"},{"id":272,"source":"91","target":"92"},{"id":273,"source":"92","target":"40"},{"id":274,"source":"92","target":"99"},{"id":275,"source":"92","target":"10"},{"id":276,"source":"93","target":"96"},{"id":277,"source":"93","target":"81"},{"id":278,"source":"93","target":"21"},{"id":279,"source":"94","target":"31"},{"id":280,"source":"94","target":"13"},{"id":281,"source":"94","target":"59"},{"id":282,"source":"95","target":"61"},{"id":283,"source":"95","target":"78"},{"id":284,"source":"95","target":"75"},{"id":285,"source":"96","target":"40"},{"id":286,"source":"96","target":"98"},{"id":287,"source":"96","target":"3"},{"id":288,"source":"97","target":"54"},{"id":289,"source":"97","target":"6"},{"id":290,"source":"97","target":"4"},{"id":291,"source":"98","target":"32"},{"id":292,"source":"98","target":"8"},{"id":293,"source":"98","target":"10"},{"id":294,"source":"99","target":"87"},{"id":295,"source":"99","target":"5"},{"id":296,"source":"99","target":"4"},{"id":297,"source":"100","target":"19"},{"id":298,"source":"100","target":"24"},{"id":299,"source":"100","target":"67"}],"path":["6","41","93","96","40","52","77"]};	// Instantiate sigma:
+	
+	// Instantiate sigma:
 	s = new sigma({
-	  graph: data,
+	  graph: JSON.parse(data2),
 	  container: 'graph-container'
 	});
 
